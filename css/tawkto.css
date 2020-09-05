@@ -1,0 +1,289 @@
+/* DEFAULT SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* CENTRAL CLASS */
+.wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/* BOX WITH GREY COLOR */
+.box1{
+    background-color:#f7f9fa;
+    width: 50%;
+    height: 100%;
+}
+
+/* BOOK */
+.babybox1{
+    background-color:white;
+    width: 30%;
+    height: 80%;
+    margin-left: 14%;
+    margin-top: 4%;
+    position: absolute;
+    box-shadow: 0 5px 15px 0 #d1d1d1;
+    box-sizing: content-box;    
+}
+
+/*BOOK COVER*/
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;  
+}
+.logo1{
+    position: inherit;
+    right: 0;
+    top: 0;
+}
+.logo2{
+    position:absolute;
+    left:0;
+    margin: 0;
+    padding-top: 5px;
+    
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;  
+}
+.textbox1{
+    padding: 13% 2% 2% 6%;
+    margin: 2%;
+}
+.textbox2{
+    padding: 0% 3% 2% 6%;
+    margin: 0 2% 2% 2%;
+}
+.greentext{
+    color:#50b648;
+    font-size: 17px;
+    padding-bottom: 6%;
+}
+.boldtext{
+    font-size:20px;
+    font-weight: 700px;
+    padding-bottom: 2%;
+}
+.boldtext a{
+    text-decoration: none;
+    color: black;
+}
+.boldtext a:hover{
+    text-decoration: underline;
+}
+.date{
+    font-size:12px;
+    color:grey;
+    padding-bottom: 5%;
+}
+.normaltext{
+    font-size:13px;
+    padding-bottom: 5%;
+}
+.link{
+    padding-bottom:1%
+}
+.link a{
+    font-size:13px;
+    color:#50b648;
+}
+.link a:hover{
+    color:#d1d1d1;
+}
+
+/* BOX WITH WHITE COLOR */
+.box2{
+    background-color: white;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* BOX CONTAINING FORM */
+.babybox2{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 17%; 
+}
+
+/* DROPDOWN */
+.dropdown{
+   padding-left: 75%;
+   padding-top: 10%;
+   font-size: small;   
+}
+.droplist{
+    display: none;
+    font-size: 14px ;
+    position:absolute;
+    background-color: whitesmoke;
+    min-width: 100px;
+    box-shadow: 0px 6px 12px 0pX grey;
+    z-index: 1;
+}
+.droplist a{
+    text-decoration: none;
+    display: block;
+    color:black;
+    padding: 10px;
+}
+.droplist a:hover{
+    background-color: white;
+}
+.dropdown:hover .droplist{
+    display: block;
+}
+.dropbutton:hover{
+    color: grey;
+    cursor: pointer;    
+}
+
+/* RESPONSIVE LOGO */
+.logo{
+    display: none;
+}
+
+/* FORM */
+.largetext{
+    font-size: 28px;
+    padding-top: 23%;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+.input{
+    display: block;
+    width: 82%;
+    margin: 10px;
+    padding: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #999;
+}
+.button{
+    display: block;
+    background-color: #50b648;
+    border: none;
+    margin: 10px;
+    padding: 17px;
+    font-size: medium;
+    width:91%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    opacity: 1;
+    transition:0.3s;
+}
+.button:hover{
+    opacity: 0.6;
+}
+.button a{
+    text-decoration:none;
+    color:white;
+}
+/* PROBLEMATIC- SOLVED IT BY CREATING FLEX BOX */
+.last{
+    width: 357px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+.greenlink a{
+    text-decoration: none;
+    color:#50b648;
+}
+.greenlink a:hover{
+    color:#d1d1d1;
+}
+.lastext{
+    padding: 25px;
+    font-size: small;
+}
+.lastext a{
+    color:#50b648;
+}
+.lastext a:hover{
+    color:#d1d1d1;
+}
+
+/* RESPONSIVE SETTINGS */
+@media screen and (max-width: 900px){
+    .babybox1{
+        width: 35%;
+        height: 80%;
+    }
+    .link{
+        padding:11px 0 7px 0;
+    }
+    .textbox{
+        display: flex;
+        flex-direction: column;
+        padding: 14px 0 0 0;
+        margin: 2% 10% 10% 10%;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+    .greentext{
+        padding-top:10%;
+        line-height: 3;
+    }
+    .boldtext{
+        font-size:18px;
+        padding-top: 1%;
+    }
+    .date{
+        line-height: 2;
+    }
+    .normaltext{
+        padding:11px 0 7px 0;
+    }
+    .babybox2{
+        padding-left:none;
+    }
+}
+@media screen and (max-width: 900px){
+    .box1{
+        display:none;
+    }
+    .box2{
+        width:100%;
+    }
+    .babybox2{
+        padding-right: 0;
+    }
+    .largetext{
+        font-size:28px;
+        padding-top: 8%;
+    }
+    .logo{ 
+    display: block;
+    padding-right: 200px;
+    margin: 0;
+    padding-bottom: 0;
+    } 
+}
