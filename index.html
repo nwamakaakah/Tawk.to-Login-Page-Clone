@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tawkto</title>
     <link rel="stylesheet" href="./css/tawkto.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <!-- CENTRAL DIV -->
@@ -104,13 +105,14 @@
                     <h2 class="largetext">
                     Login to your tawk.to account
                 </h2>
-                </center>
+								</center>
 
-                <input class= input type="text" placeholder="Enter Email">
-                <input class= input type="password" placeholder="Enter Your Password">
-                <button class="button">
-                    <a href="#"> Sign In</a>
-                </button>
+							<form action= "#" method= "post" onsubmit="return formVerify()">
+                <input class= input id="email" type="email" placeholder="Enter Email">
+                <p id="wrongmail">This field is required</p>
+                <input class= input id="pwd" type="password" placeholder="Enter Your Password">
+                <p id="wrongpwd">This field is required</p>
+                <button class="button" id="btn +" > Sign In</button>
                 
                 <center>
                 <div class="last">
@@ -119,7 +121,8 @@
                     <input type="checkbox" id="rememberme">
                 <label for="rememberme"> Remember Me</label>
                 </div>
-                
+							</form>
+
                 <div class="greenlink">
                     <a href="#">Forgot Password? </a>
                 </div>
