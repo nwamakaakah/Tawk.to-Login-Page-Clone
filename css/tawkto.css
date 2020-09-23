@@ -13,8 +13,6 @@
     padding: 0;
     margin: 0;
     background-color: grey;
-    height: 100%;
-    width: 100%;
     position: fixed;
     left: 0;
     right: 0;
@@ -32,7 +30,7 @@
 .babybox1{
     background-color:white;
     width: 30%;
-    margin-left: 14%;
+    margin-left: 16%;
     margin-top: 4%;
     position: absolute;
     box-shadow: 0 5px 15px 0 #d1d1d1;
@@ -123,9 +121,8 @@
 /* BOX CONTAINING FORM */
 .babybox2{ 
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-right: 17%; 
+    padding-left: 9%; 
 }
 
 /* DROPDOWN */
@@ -168,7 +165,7 @@
 /* FORM */
 .largetext{
     font-size: 28px;
-    padding-top: 15%;
+    padding-top: 22%;
     padding-bottom: 10px;
     margin: 10px;
     text-decoration: none;
@@ -185,9 +182,10 @@
 
 #wrongmail, #wrongpwd{
     align-self: flex-start;
-    padding-left: 17px;
+    padding-left: 11px;
     font-size: small;
     color: red;
+    display: none;
 }
 
 .button{
@@ -216,7 +214,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 15px 30px 15px 15px;
 }
 .greenlink a{
     text-decoration: none;
@@ -226,9 +224,12 @@
     color:#d1d1d1;
 }
 .lastext{
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 50px 25px 25px;
     font-size: small;
-}
+} 
+/* meant for the don't have account? */
 .lastext a{
     color:#50b648;
 }
@@ -268,7 +269,7 @@
         padding:11px 0 7px 0;
     }
     .babybox2{
-        padding-left:none;
+        padding-left:5px;
     }
 }
 @media screen and (max-width: 900px){
